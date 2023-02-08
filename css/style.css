@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    background: url("../imgs/black-concrete-wall_24972-1046.avif") no-repeat;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(8, 8, 8,0.5);
+    height: 1000px;
+
+}
+.nav-div{
+    position: fixed;
+width: 20%;
+    
+}
+.socila-media{
+    margin-top: 100px;
+}
+.socila-media a{
+padding: 20px;
+color: #fff ;
+
+}
+.main-section{
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+.nav-div .nav{
+    color: #fff;
+    margin: 50px;
+    font-size: bold;
+
+}
+.nav p{
+    font-size: 40px;
+}
+ul{
+    line-height: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+ul a{
+    color: #fff;
+}
+ul a:hover{
+    color: #850000;
+}
+.main-div{
+    width: 95%;
+    height: 500px;
+    background-color: #000;
+    margin: 2.5%;
+    color:#fff ;
+    display: flex;
+}
+.one{
+    width: 60%;
+}
+.bg-one{
+    margin-top: 70px;
+    margin-left: 150px;
+    width: 70%
+}
+.bg-two{
+    width: 300px;
+    margin-top: -195px;
+    margin-left: 10%;
+}
+.title{
+    font-family: 'Satisfy', cursive;
+    margin-left: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    z-index: 222222;
+}
+.par{
+    padding-left: 30px;
+    padding-top: 100px;
+}
+.par1{
+    padding-left: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    background-color: #850000;
+    border: 1px solid #850000;
+    color: #fff;
+    margin: 50px 130px;
+    cursor: pointer;
+}
+.div-products{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+   
+    margin: 2.5%;
+}
+.product{
+    width: 24%;
+    height: 300px;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+}
+.product img{
+    width: 200px;
+    margin-top: 50px;
+    display: block;
+}
+.div-overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(8, 8, 8,0.9);
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    font-size: 15px;
+    padding: 20px;
+    top: 0px;
+    text-align: center;
+    cursor: pointer;
+    transform: scaleX(0);
+}
+.price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-overlay i:hover{
+    color: #850000;
+}
+.product:hover .div-overlay
+ {
+    opacity: 1;
+    transform: scaleX(1);
+}
+.div-rate{
+    margin-top: 10px;
+}
+.fa-star{
+    cursor: pointer;
+}
+.div-rate .fas{
+    color: #850000;
+    padding: 10px;
+    
+}
+.icon{
+    padding: 10px;
+    padding-top: 40px;
+}
+.div-overlay h2{
+    font-weight: lighter;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+/* modal css*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute;
+    z-index: 55555555555;    
+    padding-top: 110px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+   color: #fff;
+    background-color: #000;
+    padding: 20px;
+    width: 100%;
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #850000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #content{
+      text-align: left;
+      font-size: 15px;
+      padding-left: 30px;
+  }
+
+  .cart-content li{
+      display: block;
+      text-align: left;
+  }
+  .line{
+      background-color: gray;
+      width: 90%;
+      margin: auto;
+      height: 1px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
